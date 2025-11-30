@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #4a148c, #b81055);
+}
+
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.heading-container {
+    width: 100%;
+    text-align: center;
+}
+
+.heading-container h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.heading-container h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.interaction-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.text-control {
+    padding: 1rem;
+    margin: 1rem 0 2rem 0;
+    background-color: #6a1b9a;
+    border: 2px solid #9c27b0;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 500px;
+    resize: vertical;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text-control:focus {
+    outline: none;
+    border-color: #ba68c8;
+    box-shadow: 0 0 10px rgba(186, 104, 200, 0.5);
+}
+
+.error-para {
+    text-align: center;
+    margin: 0;
+    min-height: 1.5rem;
+    color: #ffeb3b;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(90deg, #ff1744, #ff6f00);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    min-width: 250px;
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 23, 68, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
